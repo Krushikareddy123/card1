@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    
+
+    <script>
+        var ai = document.createElement("div")
+        document.body.appendChild(ai)
+        ai.setAttribute("style","margin-left:550px")
+        var sa = document.createElement("img")
+        
+        var get = localStorage.getItem("obj");
+        var js = JSON.parse(get);
+        var get = localStorage.getItem("obj");
+        var js = JSON.parse(get);
+        sa.setAttribute("src",js["image"])
+        sa.setAttribute("style","width:400px;height:400px;border-radius:20%;border:2px solid black;")
+        ai.appendChild(sa)
+        var pp = document.createElement("h1");
+        ai.appendChild(pp)
+        pp.innerText="price:"+js["price"];
+        pp.setAttribute("style","color:black;background-color:red;margin-left:120px;width:fit-content;border:1px solid black")
+
+        var card = document.createElement("button");
+        ai.appendChild(card)
+        card.innerText="BUY NOW";
+        card.setAttribute("style","background-color:blue;color:black;width:200px;height:50px;margin-left:100px")
+
+        card.addEventListener("click",add)
+        function add(){
+        window.location.assign("./card4.html");
+       }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <style>
+        img{
+            width:500px;height:500px;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <!-- <img src=""> -->
+
+    <script>
+
+
+//var cre = document.createElement("div");
+//cre.setAttribute("style","margin-left=500px")
+//document.body.appendChild(cre)
+
+
+// var dv1 = document.createElement("div");
+// dv1.setAttribute("style","margin-left:600px;margin-top:-700px;")
+
+// document.body.appendChild(dv1);
+
+
+// var h = document.createElement("h1");
+// h.innnerText="title:"+js["title"]
+// dv1.appendChild(h)
+
+// var dv1 = document.createElement("div");
+// dv1.setAttribute("style","margin-left:600px;margin-top:-700px;")
+
+// document.body.appendChild(dv1);
+
+// var k = document.createElement("h1");
+// k.innerText="id:"+js["id"]
+// dv1.appendChild(k)
+
+// var h = document.createElement("h1");
+// h.innerText="title:"+js["title"]
+// dv1.appendChild(h)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ var imgg = document.createElement("img");
+ document.body.appendChild(imgg)
+
+var get = localStorage.getItem("obj");
+ var js = JSON.parse(get);
+
+ imgg.setAttribute("src",js["image"])
+ 
+ 
+ 
+
+
+
+ var dv2 = document.createElement("div");
+ dv2.setAttribute("style","margin-top:0px;")
+ //dv2.setAttribute("style",)
+ document.body.appendChild(dv2);
+  var imgg1 = document.createElement("img");
+  dv2.appendChild(imgg1)
+  imgg1.setAttribute("src","./h11.jpg")
+  imgg1.style.width="200px"
+  imgg1.style.height="200px"
+  
+  // dv.appendChild(imgg);
+   imgg1.addEventListener("click",()=>{
+    imgg.setAttribute("src","./h11.jpg")
+   })
+
+  
+  var imgg2 = document.createElement("img");
+  dv2.appendChild(imgg2)
+  imgg2.setAttribute("src","./h12.jpg")
+   imgg2.style.width="200px"
+   imgg2.style.height="200px"
+  
+   //dv.appendChild(imgg);
+   imgg2.addEventListener("click",()=>{
+    imgg.setAttribute("src","./h12.jpg")
+   })
+
+   var imgg3 = document.createElement("img");
+  dv2.appendChild(imgg3)
+  imgg3.setAttribute("src","./h14.jpg")
+   imgg3.style.width="200px"
+   imgg3.style.height="200px"
+   //dv.appendChild(imgg);
+   imgg3.addEventListener("click",()=>{
+    imgg.setAttribute("src","./h14.jpg")
+   })
+
+   
+var dv1 = document.createElement("div");
+dv1.setAttribute("style","margin-left:700px;margin-top:-700px;")
+
+document.body.appendChild(dv1);
+
+var k = document.createElement("h1");
+k.innerText="Id:"+js["id"]
+k.setAttribute("style","background-color:red;color:white;width:fit-content")
+dv1.appendChild(k)
+
+var h = document.createElement("h1");
+h.innerText="Title:"+js["title"]
+h.setAttribute("style","background-color:violet;color:black;width:fit-content")
+dv1.appendChild(h)
+
+var r = document.createElement("h1");
+r.innerText="Category:"+js["category"]
+r.setAttribute("style","background-color:pink;color:black;width:fit-content")
+dv1.appendChild(r)
+
+var us = document.createElement("h1");
+us.innerText="Description:"+js["description"]
+us.setAttribute("style","background-color:lightgreen;color:black;width:fit-content")
+dv1.appendChild(us)
+
+var hi = document.createElement("h1");
+hi.innerText="Price:"+js["price"]
+hi.setAttribute("style","background-color:lightblue;color:black;width:fit-content")
+dv1.appendChild(hi)
+
+var ka = document.createElement("h1");
+ka.innerText="Rating Rate:"+js["rating"]["rate"]
+ka.setAttribute("style","background-color:lightpink;color:black;width:fit-content")
+dv1.appendChild(ka)
+
+var kr = document.createElement("h1");
+kr.innerText="Rating Count:"+js["rating"]["count"]
+kr.setAttribute("style","background-color:red;color:black;width:fit-content")
+dv1.appendChild(kr)
+
+
+var ru = document.createElement("button");
+dv1.appendChild(ru)
+ru.innerText="ADD TO CARD";
+ru.setAttribute("style","background-color:blue;color:white;width:200px;height:50px;")
+
+ru.addEventListener("click",buy)
+function buy(){
+    window.location.assign("./card3.html");
+}
+
+</script>
+</body>
+</html>
